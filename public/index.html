@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheets/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/themes/my-custom-theme.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+
+    <title>All About Cars</title>
+</head>
+
+<body>
+    <!-- ======================================================================================== -->
+
+    <!-- ======================================================================================== -->
+    <div data-role="page" id="home">
+
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h1>All About Cars</h1>
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car's Value</a></li>
+                    <li><a href="#morecars">Add to Our Catalog</a></li>
+                    <li><a href="#fullcatalog">Look at Our Catalog</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <!-- ======================================================================================== -->
+
+        <!-- ======================================================================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            Welcome to All About Cars!
+            <br>
+            <br>
+            <h2>Find Your Car's Value</h2> 
+            <p>Use our Car Value Calculator to find the value of your vehicle! </p>
+            <h2>Add to Our Catalog</h2>
+            <p>Add your interesting vehicle to our extensive and growing Car Catalog!</p>
+            <h2>Look at Our Catalog</h2>
+            <p>Take a look at amazing vehicles of all types and classes! Check back daily for new amazing additions!</p>
+            <br>
+            <br>
+
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyright 2023 by Erik R. & Shalom T.</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+    <!-- ======================================================================================== -->
+
+
+    <!-- ======================================================================================== -->
+    <div data-role="page" id="findcar">
+
+        <!-- =================================== -->
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h1>Find Your Car's Value</h1>
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car's Value</a></li>
+                    <li><a href="#morecars">Add to Our Catalog</a></li>
+                    <li><a href="#fullcatalog">Look at Our Catalog</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+           
+        <h2>Car Value Calculator</h2>
+        <h3>Car's Initial Value:</h3>
+        <input type="text" id="initialValue">
+        <br><br>
+        <h3>Car's Age:</h3>
+        <input type="text" id="age">
+        <br><br>
+        <button onclick="calculateValueLoss()">Calculate Depreciation</button>
+        <br><br>
+        <h3>Depreciation:</h3>
+        <span id="valueLoss"></span>
+        <br><br>
+        <h3>Car's New Value:</h3>
+        <span id="newValue"></span>
+
+            <br>
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyright 2023 by Erik R. & Shalom T.</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+    <!-- ======================================================================================== -->
+
+
+
+    <!-- ======================================================================================== -->
+    <div data-role="page" id="morecars">
+
+        <!-- =================================== -->
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h1>Add to Our Catalog</h1>
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car's Value</a></li>
+                    <li><a href="#morecars">Add to Our Catalog</a></li>
+                    <li><a href="#fullcatalog">Look at Our Catalog</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            
+            <h2>Add to Our Catalog</h2>
+            Use this page to add new vehicles to our catalog. 
+            <br>
+            <br>
+            Please use the form below to fill out the required information. After you are completed, click "Add a New Car"
+            <br>
+                
+                <br>
+                <h3>What is the Car's Make?</h3>
+                <input type="text" id="brand" >
+                <br>
+                <h3>What is the Car's Model?</h3>
+                <input type="text" id="title">
+                <br>
+                <h3>What is the Car's Year? </h3>
+                <input type="text" id="year">
+                <br>
+                
+                <h3>What is the Car's Color?</h3>
+                <input type="text" id="color">
+                <br>
+                <h3>What is the Car's Price?</h3>
+                <input type="text" id="cost">
+                <br>
+                <h3>Add the link of photo.</h3>
+                <input type="text" id="URL">
+                <br>
+                <input type="button" value="Add a New Car" id="buttonAdd" data-inline="true" />
+                <input type="button" value="Clear Data" id="buttonClear" data-inline="true" />
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyright 2023 by Erik R. & Shalom T.</h3>
+        </div>
+        <!-- =================================== -->
+
+    </div>
+    <!-- ======================================================================================== -->
+
+
+    <div data-role="page" id="fullcatalog">
+
+        <!-- =================================== -->
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h1>Look At Our Catalog</h1>
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car's Value</a></li>
+                    <li><a href="#morecars">Add to Our Catalog</a></li>
+                    <li><a href="#fullcatalog">Look at Our Catalog</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            <h2>Our Car Catalog</h2>
+            Here you can check the whole Catalog of Cars which we have. Just push the Button.
+            
+            <h3> Here are you can find all Cars Catalog which we have</h3>
+            <div id="divCarList"></div>
+            <input type="button" value="Sort By Year" id="buttonSortYear" data-inline="true" />
+            <input type="button" value="Sort By Brand" id="buttonSortBrand" data-inline="true" />
+            <br>
+            <br>
+
+            <h3> Here are my Cars in that Brand</h3>
+            <div id="divCarListSubset"></div>
+            <input type="button" value="Show just Lamborghini" id="buttonSubsetLamb" data-inline="true" />
+            <input type="button" value="Show just Porsche" id="buttonSubsetPorsche" data-inline="true" />
+
+        </div>
+        </div>
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyright 2023 by Erik R. & Shalom T.</h3>
+        </div>
+        <!-- =================================== -->
+
+
+
+  <!-- Start of  page -->
+  <div data-role="page" id="carDetails">
+  
+    <!--   page header -->
+    <div data-role="header" data-theme='b'>
+      <h1>Car Details</h1>
+      <div data-role="navbar" data-theme='b'>
+        <ul>
+            <li><a href="#home">Home Page</a></li>
+            <li><a href="#findcar">Find Your Car Value</a></li>
+            <li><a href="#morecars">Add More Cars</a></li>
+            <li><a href="#fullcatalog">Full Catalog</a></li>
+  
+        </ul>
+      </div>
+    </div>
+  
+    <!--  content -->
+    <div data-role="content" data-theme='e'>
+      <h3> Full Details of Car:</h3>
+      <p id="carTitle"></p>
+      <p id="carYear"></p>
+      <p id="carBrand"></p>
+      <p id="carColor"></p>
+      <p id="carCost"></p>
+      <p id="carURL" hidden></p>
+      <input type="button" value="Photo" id="photo" />
+    </div>
+    <input type="button" value="Delete" id="delete" style="background: rgb(216, 11, 11)"/>
+
+    
+  
+    <!--    footer -->
+    <div data-role="footer" data-theme='b'>
+        <h3>Copyright 2023 by Erik R. & Shalom T.</h3>
+    </div>
+  
+  </div>
+
+
+
+    </div>
+    <!-- ======================================================================================== -->
+
+
+
+    <script src="javascripts/main.js"></script>
+
+</body>
+
+</html>
